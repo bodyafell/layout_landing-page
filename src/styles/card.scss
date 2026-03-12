@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-self: center;
   width: 280px;
+  transition: transform 300ms;
 
   @include on-tablet {
     width: 392px;
@@ -10,6 +11,10 @@
 
   @include on-desktop {
     width: 324px;
+  }
+
+  &:hover {
+    transform: translateY(-5%);
   }
 }
 

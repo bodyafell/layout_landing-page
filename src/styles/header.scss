@@ -3,7 +3,7 @@
   background-image: url(img/header-background.png);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: right 0 center;
+  background-position: right -90px center;
   background-color: $background-color;
 
   @include content-paddind-inline;
@@ -80,6 +80,10 @@
     width: $icon-size;
     height: $icon-size;
   }
+  &:hover {
+    transform: translateY(-3px);
+    transition: transform 300ms;
+  }
 }
 
 .header__icons {
@@ -93,6 +97,17 @@
 
 .icon--header-phone {
   background-image: url(img/icon-phone-call.png);
+  position: relative;
+
+  &:hover::after {
+    content: '+1 234 555-55-55';
+    position: absolute;
+    height: 100%;
+    line-height: $icon-size;
+    text-align: right;
+    width: 400px;
+    right: calc($icon-size / 2 + $icon-size);
+  }
 }
 
 .icon--header-burger {
