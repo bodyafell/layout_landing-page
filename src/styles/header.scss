@@ -96,7 +96,7 @@
 }
 
 .icon--header-phone {
-  background-image: url(img/icon-phone-call.png);
+  background-image: url(./img/Icon-Phone-call.svg);
   position: relative;
 
   &:hover::after {
@@ -111,9 +111,9 @@
 }
 
 .icon--header-burger {
-  background-image: url(img/icon-burger-menu.png);
+  background-image: url(img/Icon-Burger-menu.svg);
 }
 
 .icon--header-burger:hover {
-  background-image: url(img/Icon-Burger-menu-hover.png);
+  background-image: url(img/icon-burger-menu-hover.svg);
 }
