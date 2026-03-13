@@ -11,18 +11,16 @@
   height: $phone-header-height;
   display: flex;
   flex-direction: column;
-  gap: 270px;
+  justify-content: space-between;
 
   @include on-tablet {
     height: $tablet-header-height;
-    gap: 300px;
+
     background-position: center;
   }
 
   @include on-desktop {
     height: $header-height;
-
-    gap: 300px;
   }
 }
 
@@ -52,22 +50,27 @@
 }
 
 .header__title {
+  justify-self: center;
   margin: 0;
+  margin-bottom: 80px;
   color: #fff;
   font-weight: 700;
   text-align: center;
   letter-spacing: -1.5px;
   font-size: 36px;
   line-height: 36px;
+  transition: all 300ms;
 
   @include on-tablet {
     font-size: 64px;
     line-height: 64px;
+    margin-bottom: 130px;
   }
 
   @include on-desktop {
     font-size: 80px;
     line-height: 80px;
+    padding-bottom: 200px;
   }
 }
 
